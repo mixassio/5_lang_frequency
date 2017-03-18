@@ -1,8 +1,8 @@
 # Frequency Analysis of Words
 
-Скрипт принимает на вход путь до текстового файла
-и выводит в консоль десять самых популярных слов в этом файле в порядке убывания частоты.
-Работает с любыми языками.
+The script takes the input path to a text file
+And displays in the console ten most popular words in this file in descending order of frequency.
+Works with any languages.
 
 # Project Goals
 
