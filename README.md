@@ -14,8 +14,7 @@ Example of script launch on Linux, Python 3.5:
 $ python lang_frequency.py <path to file>
 
 $ [('и', 10132), ('в', 4863), ('не', 4220), ('что', 3646), ('на', 3200), ('с', 3023), ('он', 3016), ('как', 1913), ('его', 1876), ('к', 1777)]
-    ```
-
+```
 
 # Project Goals
 
