@@ -14,15 +14,21 @@ def load_data(filepath):
             return file_text.read()
 
 
-def get_most_frequent_words(text):
-    return collections.Counter(re.sub(r'[^\w\s]', '', text).split()).most_common(10)
+def get_most_frequent_words(text, cost_result=10):
+    return collections.Counter(re.sub(r'[^\w\s]', '', text).split()).most_common(cost_result)
 
 
 
 if __name__ == '__main__':
-    if sys.argv[1]:
-        text_file = load_data(sys.argv[1])
-    else:
+    try:
+        if sys.argv[1]:
+            text_file = load_data(sys.argv[1])
+    except IndexError:
         print('input path to file')
-    print(get_most_frequent_words(text_file))
-
+    try:
+        if sys.argv[2] and isinstance(int(sys.argv[2]), int):
+            print(get_most_frequent_words(text_file, int(sys.argv[2])))
+    except IndexError:
+        print(get_most_frequent_words(text_file))
+    
+ 
