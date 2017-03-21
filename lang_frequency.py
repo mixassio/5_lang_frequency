@@ -28,7 +28,7 @@ if __name__ == '__main__':
     try:
         if sys.argv[2] and isinstance(int(sys.argv[2]), int):
             print(get_most_frequent_words(text_file, int(sys.argv[2])))
-    except IndexError:
+    except (IndexError, ValueError):
         print(get_most_frequent_words(text_file))
     
  
